@@ -28,6 +28,7 @@ class DownLoader(object):
 
     def get_content(self, target):
         req = requests.get(target, headers=self.header)
+        print(requests.utils.get_encoding_from_headers(req.headers))
         html = req.text
         con_bf = BeautifulSoup(html, 'lxml')
         con = con_bf.find_all('div', class_='showtxt')

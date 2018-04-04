@@ -93,8 +93,7 @@ class GetGirlsPhoto(object):
 
 if __name__ == '__main__':
     urls = ['http://www.55156.com/a/Mygirl',
-            'http://www.55156.com/a/Beautyleg', 'http://www.55156.com/a/TGOD',
-            'http://www.55156.com/gaoqingtaotu/youguowang']
+            'http://www.55156.com/a/Beautyleg']
     for i in urls:
         url = i
         path_name = i.rsplit('/', 1)[1]
